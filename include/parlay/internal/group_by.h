@@ -205,7 +205,7 @@ struct remove_duplicates_helper {
   static void update(result_type &, in_type const&) {}
   static void destruct_val(in_type &) {}
   template <typename Range>
-  static result_type reduce(Range S) {return S[0];};
+  static result_type reduce(Range S) {return S[0];}
 };
 
 // should be made more efficient by avoiding generating and then stripping counts
